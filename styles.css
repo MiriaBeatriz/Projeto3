@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.gallery {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 8px;
+    z-index: 1;
+}
+
+.carousel-button.prev-button {
+    left: 10px;
+}
+
+.carousel-button.next-button {
+    right: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
